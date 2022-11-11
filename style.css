@@ -33,4 +33,41 @@ nav {
      padding-left: 65px;
    }
 
+   .container {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    padding: 5px;
+    flex-basis: 100%;
+    margin: 5px;
+  }
+
+  .card1 {
+    height: 500px;
    
+    background-image: url(images/orange\ gradient\ background.jpeg);
+    background-color: white;
+    background-blend-mode: screen;
+
+  }
+  
+  .card2 {
+    background-color: #FFA157;
+    height: 500px;
+    }
+
+    .card2 img {
+    
+    }
+
+    .card6 {
+      height: 500px;
+      background-image: url(images/surf4.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
