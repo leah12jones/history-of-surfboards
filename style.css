@@ -18,7 +18,8 @@ nav {
   
   li a:hover {
     background: #FFA157;
-    border-radius: 25px;
+    border-radius: 25p
+
   }
 
   header {
@@ -27,11 +28,10 @@ nav {
      background-image: url(images/hero.jpeg);
      background-size: cover;
      display: flex;
-     flex-direction: column;
-     align-items: left;
-     justify-content: left;
-     padding-left: 65px;
+    }
    }
+
+   
 
    .container {
     margin: 0;
@@ -48,26 +48,45 @@ nav {
   }
 
   .card1 {
-    height: 500px;
-   
-    background-image: url(images/orange\ gradient\ background.jpeg);
-    background-color: white;
-    background-blend-mode: screen;
+    background-image: url(images/orange-gradient-background.jpeg);
+
 
   }
   
-  .card2 {
+  .early-origins {
     background-color: #FFA157;
-    height: 500px;
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    gap: 2em;
     }
 
-    .card2 img {
+  .early-origins-content {
+    flex: 1;
+  }
+  .early-origins-image {
+   width: 465px;
+   padding: 2em;
+  
+  }
+
+  .early-origins-image img {
+    width: 100%;
+    border-radius: 25px;
+  }
+
+    .nineteen-hundreds-content {
+      flex: 1;
+    }
+    .nineteen-hundreds-image {
+     width: 465px;
+     padding: 2em;
     
     }
-
-    .card6 {
-      height: 500px;
-      background-image: url(images/surf4.png);
-      background-repeat: no-repeat;
-      background-size: 100%;
+  
+    .nineteen-hundreds-image img {
+      width: 100%;
+      border-radius: 25px;
     }
+      
+  
