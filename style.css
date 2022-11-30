@@ -1,13 +1,17 @@
-nav {
-    background: #A7DBD8;
-  }
+.navigation {
+  background: #A7DBD8;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
   ul {
     margin: 0px;
   }
   nav ul li {
     list-style-type: none;
     display: inline-block;
-    padding: 30px 0;
+    padding: 20px 0;
   }
   
   li a {
@@ -24,21 +28,26 @@ nav {
 
   header {
     height: 70vh;
+    padding: 2em;
     background-color: lightcoral;
      background-image: url(images/hero.jpeg);
      background-size: cover;
+     background-position: center;
      display: flex;
+     align-items: center;
+     font-size: x-large;
+
     }
-   }
+   
 
    
 
    .container {
     margin: 0;
     width: 100%;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
   }
   
   .card {
@@ -47,12 +56,52 @@ nav {
     margin: 5px;
   }
 
-  .card1 {
-    background-image: url(images/orange-gradient-background.jpeg);
 
+  .surf-title {
+    background: url(images/Surf.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    position: relative;
+    height: 300px;
+  }
+
+  .surf-title-photo {
+    position: absolute;
+    top: -250px;
+    right: 100px;
+    width: 493px;
+    height: 430px;
+  }
+
+  .surf-title-photo img {
+    width: 100%;
+  }
+
+  .overview {
+    width: 70%;
+    display: flex;
+    gap: 1em;
+    margin: 0 auto;
+    padding: 3em;;
+    background-image: url(images/orange-gradient-background.jpeg);
+    background-color: rgba(255,255,255,.3);
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-size: cover;
 
   }
+
+  .overview-photo {
+    flex: 2;
+  }
+
+  .overview-photo img {
+    width: 100%;
+  }
   
+  .overview-content {
+    flex: 1;
+  }
   .early-origins {
     background-color: #FFA157;
     text-align: left;
@@ -75,18 +124,5 @@ nav {
     border-radius: 25px;
   }
 
-    .nineteen-hundreds-content {
-      flex: 1;
-    }
-    .nineteen-hundreds-image {
-     width: 465px;
-     padding: 2em;
-    
-    }
   
-    .nineteen-hundreds-image img {
-      width: 100%;
-      border-radius: 25px;
-    }
       
-  
