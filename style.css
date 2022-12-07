@@ -89,11 +89,11 @@
   }
 
   .overview {
-    width: 70%;
+    width: 100%;
     display: flex;
-    gap: 1em;
+    gap: 2em;
     margin: 0 auto;
-    padding: 3em;;
+    padding-left: 7em;
     background-image: url(images/orange-gradient-background.jpeg);
     background-color: rgba(255,255,255,.3);
     background-blend-mode: lighten;
@@ -101,11 +101,6 @@
     background-size: cover;
 
   }
-
-  .overview-photo {
-    flex: 2;
-  }
-
   .overview-photo img {
     width: 100%;
   }
@@ -119,6 +114,7 @@
     padding: 20px;
     display: flex;
     gap: 2em;
+ 
     }
 
   .early-origins-content {
@@ -140,6 +136,11 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    background-image: url(images/orange-gradient-background.jpeg);
+    background-color: rgba(255,255,255,.3);
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .decades-section-content {
@@ -167,24 +168,107 @@
     object-fit: cover;
 }
 
+.thirties-section {
+  display:flex;
+}
 
-.twenties-section {
-    display: flex;
-    align-items: flex;
+.two-col-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.forties-section {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  background-image: url(images/orange-gradient-background.jpeg);
+  background-color: rgba(255,255,255,.3);
+  background-blend-mode: lighten;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.forties-section-content {
+  width: 400px;
+  padding: 0 3em;
+}
+
+.forties-section-photo {
+ width: 820px;
+}
+
+.fifties-section {
+  display: flex;
+  gap: 1em;
+  position: relative;
+  margin: 4em 0;
+  padding: 0 3em;
+  background-image: url(images/orange-gradient-background.jpeg);
+  background-color: rgba(255,255,255,.3);
+  background-blend-mode: lighten;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.fifties-section-photo-absolute img {
+  width: 100%;
+  border-radius: 45px;
+}
+
+.fifties-section-photo-absolute {
+  position: relative;
+}
+
+.fifties-section-photo-absolute {
+  width: 400px;
+  position: absolute;
+  bottom: -50px;
+  right: 400px;
+}
+
+
+
+.section-photo {
+  background: black;
+  display: flex;
+  justify-content:center;
   
 }
 
-.twenties-section-content {
-width: 400px;
-padding-right: 3em; 
-padding-top: 5em;
+.section-photo img {
+  padding:20px;
+  width:100%;
 }
 
-.twenties-section-photo {
-  width: 520px;
-  position: relative;
- }
+
+.eighties-section-photo {
+  background: black;
+}
+
+.nineties-section {
+  display: flex;
+}
+
+
+.two-col-card {
+  display: flex;
+  
 
 
 
-      
+.present-day-section-photo {
+  background: black;
+}
+
+.present-day-section-photo-2 {
+  background: black;
+}
+
+
+.footer {
+  background:#A7DBD8;
+}
