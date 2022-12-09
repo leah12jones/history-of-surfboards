@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Kirang+Haerang&family=Nunito:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+  font-family: 'Kirang Haerang', cursive;
+}
 .navigation {
   background: #A7DBD8;
   display: flex;
@@ -55,10 +66,14 @@
     gap: 1em;
     box-sizing: border-box;
   }
-  .card-images {
-    display: flex;
-    align-content: center;
-    gap: 1em;
+
+  .card-image {
+    flex: 1;
+  }
+
+
+
+  .card-text {
     flex: 1;
   }
 
@@ -88,19 +103,44 @@
     width: 100%;
   }
 
+  .overview-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
   .overview {
-    width: 100%;
     display: flex;
     gap: 2em;
     margin: 0 auto;
     padding-left: 7em;
-    background-image: url(images/orange-gradient-background.jpeg);
+    /* background-image: url(images/orange-gradient-background.jpeg); */
     background-color: rgba(255,255,255,.3);
     background-blend-mode: lighten;
     background-repeat: no-repeat;
     background-size: cover;
 
   }
+  .overview-photo {
+    flex: 1;
+    /* position: relative; */
+  }
+
+  .overview-photo2 {
+    width: 40%;
+    position: relative;
+    top: -100px;
+    left: 40%
+  
+    /* 
+    position: absolute;
+    right: -250px;
+    bottom: -100px; */
+  }
+
+  .overview-photo2 img {
+    width: 100%;
+  }
+
   .overview-photo img {
     width: 100%;
   }
@@ -168,25 +208,62 @@
     object-fit: cover;
 }
 
-.thirties-section {
-  display:flex;
+.two-col-card {
+  display: flex;
+  gap: 1em;
+  background-color: rgba(255,255,255,.3);
 }
 
-.two-col-card {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.3rem;
-  margin-bottom: 2rem;
+
+
+.two-col-card content {
+  width: 400px;
+  padding: 0 3em;
 }
+
+
+
+.thirties-section {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  background-image: url(images/orange-gradient-background.jpeg);
+  background-color: rgba(255,255,255,.3);
+  background-blend-mode: lighten;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-reverse {
+  flex-direction: row-reverse;
+}
+
+
+.thirties-section-content {
+  display: flex 1;
+}
+
+.thirties-section-photo img {
+  align-items: flex-end;
+}
+
+.fifties-section-photo-absolute img {
+  width: 100%;
+  border-radius: 45px;
+}
+
+.fifties-section-photo-absolute {
+  position: relative;
+}
+
+
 
 .forties-section {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  background-image: url(images/orange-gradient-background.jpeg);
   background-color: rgba(255,255,255,.3);
-  background-blend-mode: lighten;
-  background-repeat: no-repeat;
+
   background-size: cover;
 }
 
@@ -212,8 +289,6 @@
   background-size: cover;
 }
 
-
-
 .fifties-section-photo-absolute img {
   width: 100%;
   border-radius: 45px;
@@ -231,7 +306,6 @@
 }
 
 
-
 .section-photo {
   background: black;
   display: flex;
@@ -240,25 +314,36 @@
 }
 
 .section-photo img {
-  padding:20px;
+  padding:40px;
   width:100%;
 }
 
 
-.eighties-section-photo {
-  background: black;
+.photo-block img {
+  display: block;
+  padding: 1em;
 }
 
 .nineties-section {
   display: flex;
+  justify-content: center;
+  gap: 1em;
+  padding: 2em;
 }
 
-
-.two-col-card {
-  display: flex;
+.nineties-section-content {
+  flex: 1;
+}
   
 
+.nineties-section-photo {
+  flex: 1;
+  padding: 1em;
+}
 
+.nineties-section-photo img {
+  width: 100%;
+}
 
 .present-day-section-photo {
   background: black;
@@ -268,7 +353,16 @@
   background: black;
 }
 
+.present-day-section-content {
+  padding: 2em;
+}
 
-.footer {
-  background:#A7DBD8;
+
+
+footer {
+background-color: #A7DBD8;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 2em;
 }
