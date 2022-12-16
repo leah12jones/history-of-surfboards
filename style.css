@@ -8,6 +8,7 @@ body {
 
 h1 {
   font-family: 'Kirang Haerang', cursive;
+  font-size: 60px;
 }
 .navigation {
   background: #A7DBD8;
@@ -47,6 +48,7 @@ h1 {
      display: flex;
      align-items: center;
      font-size: x-large;
+    
 
     }
    
@@ -118,11 +120,19 @@ h1 {
     background-blend-mode: lighten;
     background-repeat: no-repeat;
     background-size: cover;
-
   }
+
+  .overview-text {
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-bottom: 8em;
+  }
+  
   .overview-photo {
     flex: 1;
     /* position: relative; */
+    padding-top: 1em;
+
   }
 
   .overview-photo2 {
@@ -143,6 +153,7 @@ h1 {
 
   .overview-photo img {
     width: 100%;
+    padding-top: 90px;
   }
   
   .overview-content {
@@ -170,7 +181,6 @@ h1 {
     width: 100%;
     border-radius: 25px;
   }
-
 
   .decades-section {
     display: flex;
@@ -212,15 +222,13 @@ h1 {
   display: flex;
   gap: 1em;
   background-color: rgba(255,255,255,.3);
+  padding-top: 10em;
+  padding-right: 7em;
 }
 
-
-
-.two-col-card content {
-  width: 400px;
-  padding: 0 3em;
+.two-col-card-content {
+  padding-left: 3em;
 }
-
 
 
 .thirties-section {
@@ -232,6 +240,14 @@ h1 {
   background-blend-mode: lighten;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top:10em;
+}
+
+.thirties-text {
+  padding-top:2em;
+  padding-bottom:5em;
+  padding-left: 5em;
+  padding-right: 5em;
 }
 
 .section-reverse {
@@ -245,6 +261,10 @@ h1 {
 
 .thirties-section-photo img {
   align-items: flex-end;
+}
+
+.hero-img-1 {
+  padding-top: 4em;
 }
 
 .fifties-section-photo-absolute img {
@@ -289,6 +309,10 @@ h1 {
   background-size: cover;
 }
 
+.fifties-section-content {
+  padding-right: 5em;
+}
+
 .fifties-section-photo-absolute img {
   width: 100%;
   border-radius: 45px;
@@ -305,12 +329,27 @@ h1 {
   right: 400px;
 }
 
+.sixties-text {
+  padding-left: 5em;
+  padding-right: 5em;
+  padding-bottom: 5em;
+}
+
+.hero-image-3 {
+  padding-top: 5em;
+}
 
 .section-photo {
   background: black;
   display: flex;
   justify-content:center;
-  
+}
+
+.seventies-text {
+  padding-left: 10em;
+  padding-right: 10em;
+  padding-top: 3em;
+  padding-bottom: 5em;
 }
 
 .section-photo img {
@@ -322,6 +361,22 @@ h1 {
 .photo-block img {
   display: block;
   padding: 1em;
+}
+
+.seventies-section-content {
+  text-align: center;
+  
+}
+
+.eighties-section-content {
+  text-align: center;
+}
+
+.eighties-text {
+  padding-left: 10em;
+  padding-right: 10em;
+  padding-top: 3em;
+  padding-bottom: 5em;
 }
 
 .nineties-section {
@@ -341,20 +396,32 @@ h1 {
   padding: 1em;
 }
 
+.nineties-text {
+  padding-right: 5em;
+}
+
 .nineties-section-photo img {
   width: 100%;
 }
 
-.present-day-section-photo {
-  background: black;
+.two-thousands-text {
+  padding-right: 5em;
+  padding-bottom: 5em;
+padding-left:5em;
 }
 
-.present-day-section-photo-2 {
-  background: black;
+.two-thousands-section-photo {
+  padding-left: 7em;
 }
 
 .present-day-section-content {
-  padding: 2em;
+  padding: 7em;
+  padding-bottom: 3em;
+}
+
+.present-day-text {
+  padding-left: 5em;
+  padding-right: 5em;
 }
 
 
@@ -364,5 +431,11 @@ background-color: #A7DBD8;
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 0 2em;
+padding: 0 1em;
+}
+
+.footer-icons {
+  display: flex;
+  font-size: 25px;
+  padding-right: 2em;
 }
